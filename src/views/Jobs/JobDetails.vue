@@ -1,23 +1,12 @@
 <template>
   <h1>Job details</h1>
-  <p>
-    {{ title }}
-  </p>
+  <p>the id is {{ id }}</p>
 </template>
 
 <script>
 export default {
-  name: "Details",
-  props: ["title"],
+  props: ["id"],
 };
 </script>
 
-<style scoped>
-p {
-  border: 1px solid crimson;
-  width: 30%;
-  margin: auto;
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-</style>
+<style></style>
