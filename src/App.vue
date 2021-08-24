@@ -4,6 +4,9 @@
     <router-link :to="{ name: 'About' }">About</router-link>
     <router-link :to="{ name: 'Jobs' }">Jobs</router-link>
   </div>
+  <button @click="redirect">Redirect</button>
+  <button @click="back">Go back</button>
+  <button @click="forward">Forward</button>
   <router-view />
 </template>
 
@@ -34,4 +37,35 @@
   background: crimson;
   color: white;
 }
+button {
+  background: rgb(10, 190, 100);
+  border: 0;
+  outline: 0;
+  margin-left: 1rem;
+  padding: 0.4rem 0.6rem;
+  font-weight: 800;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.4s ease;
+}
+button:hover {
+  background: rgb(19, 238, 129);
+}
 </style>
+
+<script>
+export default {
+  methods: {
+    redirect() {
+      this.$router.push({ name: "Home" });
+    },
+    back() {
+      this.$router.go(-1);
+    },
+    forward() {
+      this.$router.go(1);
+    },
+  },
+};
+</script>
