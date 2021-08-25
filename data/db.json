@@ -1,0 +1,19 @@
+{
+  "Jobs": [
+    {
+      "id": 1,
+      "title": "Web developer UI",
+      "Job type": "Part time"
+    },
+    {
+      "id": 2,
+      "title": "React UI designer",
+      "Job type": "Full time"
+    },
+    {
+      "id": 3,
+      "title": "Photoshop designer",
+      "Job type": "on schedule"
+    }
+  ]
+}
